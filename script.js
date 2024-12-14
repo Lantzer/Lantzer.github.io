@@ -1,24 +1,26 @@
-// Check JS is Connected
-console.log('OK');
+// Ensure script is connected
+console.log('JavaScript is connected');
 
-// get JSON data
-// create anchor link for each item
-document.addEventListener('DOMContentLoaded', async () => {
-    try {
-      const response = await fetch('data.json');
-      const data = await response.json();
-      
-      const myLinks = document.getElementById('myLinks');
-      const fragment = document.createDocumentFragment();
-  
-      data.myLinks.forEach(({ url, name }) => {
-        const li = document.createElement('li');
-        li.innerHTML = `<a href="${url}" target="_blank">${name}</a>`;
-        fragment.appendChild(li);
-      });
-  
-      myLinks.appendChild(fragment);
-    } catch (error) {
-      console.error('Error loading JSON:', error);
+// JavaScript to simulate typing effect
+function typeWriter(elementId, text, speed) {
+  let i = 0;
+  const element = document.getElementById(elementId);
+
+  function type() {
+    if (i < text.length) {
+      element.innerHTML += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
     }
-  });
+  }
+
+  type();
+}
+
+// Call the function with your desired string and speed
+document.addEventListener("DOMContentLoaded", function() {
+  console.log('Page fully loaded');
+  const text = "Hello, welcome to the animated typing effect!";
+  const speed = 100; // Speed in milliseconds
+  typeWriter("typed-output", text, speed);
+});

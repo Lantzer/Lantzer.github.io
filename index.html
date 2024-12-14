@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
+    <title>Preston Lantzer</title>
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="/favicons/favicon-48x48.png" sizes="48x48" />
@@ -14,35 +13,40 @@
     <meta name="apple-mobile-web-app-title" content="Web Dev Starter" />
     <link rel="manifest" href="/favicons/site.webmanifest" />
 
-    <!-- Stylesheets -->
-      <!-- Normalize -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-   
-   <!-- Baseline Styling -->
-   <link rel="stylesheet" href="base.css">
-   <!-- Specific Elements -->
-   <link rel="stylesheet" href="style.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-   <!-- JavaScript -->
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
     <script src="script.js" defer></script> 
-   
 </head>
 <body>
-
-    <main>
-
-    <h1>Your Name</h1>
-
-    <img src="https://assets.codepen.io/16425/tree.jpg" alt="Placeholder Image">
-
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quidem amet molestiae ipsam iste aliquam repellendus consectetur nemo suscipit, quos delectus, eos dolore perspiciatis aspernatur aperiam voluptas eius soluta vitae?</p>
-
-    <h2>My Links</h2>
-
-    <!-- dynamically generate external links from JSON file -->
-    <ul id="myLinks"></ul>
-
-    </main>
+    <header>
+        <h1 class="name">Preston Lantzer</h1>
+    </header>
     
+    <main>
+        <section class="intro-message">
+            <div id="typed-output"></div>
+        </section>
+        <div class="project-container">
+            <div class="project-box">
+                <h2>Project 1</h2>
+                <p>Short description of project 1.</p>
+            </div>
+            <div class="project-box">
+                <h2>Project 2</h2>
+                <p>Short description of project 2.</p>
+            </div>
+            <div class="project-box">
+                <h2>Project 3</h2>
+                <p>Short description of project 3.</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
