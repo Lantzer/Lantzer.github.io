@@ -20,7 +20,8 @@ function typeWriter(elementId, text, speed) {
 // Call the function with your desired string and speed
 document.addEventListener("DOMContentLoaded", function() {
   console.log('Page fully loaded');
-  const text = "Hello, welcome to the animated typing effect!";
+  const text = "preston lantzer";
   const speed = 100; // Speed in milliseconds
   typeWriter("typed-output", text, speed);
+
 });
