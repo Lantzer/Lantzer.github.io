@@ -25,7 +25,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom right, #2c4a52 30%, #8e9b97);
+  background: linear-gradient(to top right, #7e203d   5%, #1D2671);
   z-index: -1;
 }
 
@@ -46,10 +46,29 @@ header {
 }
 
 .name {
-  font-family: 'Lato', sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
   color: #000000;
+}
+
+.typedName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+  position: relative;
+}
+
+.typedContent {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh; /* Set the section to be 25% of the viewport height */
+  text-align: center;
+  position: relative;
 }
 
 /* Projects */
@@ -58,12 +77,15 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  height: 30vh;
+  position: absolute;
+  bottom: 20vh;
+  width: 100%;
+  height: 20vh;
 }
 
 .project-box {
-  background-color: #2a313243;
-  border: 2px solid #8e9b97;
+  background-color: #2a313233;
+  border: 2px solid #02030775;
   border-radius: 8px;
   width: 200px;
   height: 200px;
@@ -72,30 +94,93 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-box:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 8px 15px #2c4a52;
+  box-shadow: 0px 4px 10px #020307e1;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Adds spacing between the two links */
+  margin-top: 1rem; /* Adds spacing above the links */
+}
+
+.project-link {
+  text-decoration: none;
+  color: white; /* Link color */
+  font-size: 10px;
+  font-weight: bold;
+  font-family: 'Lato', 'Roboto', Arial, sans-serif;
+  background-color: #2a31326a; /* Grey background */
+  border: 1px solid #8e9b97; /* Border color */
+  padding: 0.25rem .5rem; /* Adds spacing inside the link */
+  border-radius: 5px; /* Rounded corners */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.project-link:hover {
+  background-color: #2a313233; /* Highlight color on hover */
+  color: rgba(255, 255, 255, 0.782); 
+  border-color: #2a313233;
 }
 
 .intro-message {
   display: flex;
+  font-family: 'Lato', sans-serif;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 25vh; /* Set the section to be 25% of the viewport height */
   text-align: center;
-  position: relative;
-  margin-bottom: 25vh; /* Position 75% up from the bottom */
+  position: absolute;
+  margin-top: 15vh;
+  margin-bottom: 10vh; 
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  gap: 2rem; /* Space between links */
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #ffffff; /* White text for links */
+  font-size: 10px;
+  border: 1px solid #8e9b97;
+  border-radius: 5px;
+  padding: 0.25rem .5rem;
+  transition: all 0.3s ease;
+  background-color: #2a313233; /* Greyish background */
+}
+
+.footer-link:hover {
+  background-color: #2a313233; /* Highlight color on hover */
+  color: rgba(255, 255, 255, 0.782);
+  border-color: #2a313233;
 }
 
 h2 {
   margin-bottom: 0.5rem;
-  color: #00bcd4;
-  font-size: 1.25rem;
+  color: white;
+  font-family: 'Lato', 'Roboto', Arial, sans-serif;
+  font-size: 15px;
 }
 
 p {

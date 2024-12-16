@@ -22,6 +22,14 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log('Page fully loaded');
   const text = "Preston Lantzer";
   const speed = 150; // Speed in milliseconds
-  typeWriter("typed-output", text, speed);
+  typeWriter("typedName", text, speed);
 
+});
+
+// Call the function with your desired string and speed
+document.addEventListener("DOMContentLoaded", function() {
+  console.log('Page fully loaded');
+  const text = "Building, Learning, Innovating, Growing";
+  const speed = 100; // Speed in milliseconds
+  typeWriter("typedContent", text, speed);
 });
